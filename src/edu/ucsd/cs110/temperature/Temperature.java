@@ -9,6 +9,7 @@ public abstract class Temperature {
         value = v;
     }
 
+    public float value;
     public final float getValue()	{
         return value;
     }
