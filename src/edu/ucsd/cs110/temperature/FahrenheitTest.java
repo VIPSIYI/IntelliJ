@@ -5,9 +5,7 @@ import static org.junit.Assert.*;
 /**
  * Created by siyi on 4/21/16.
  */
-public class FahrenheitTest {
-    package edu.ucsd.cs110.temperature;
-    import static org.junit.Assert.*;
+
     import org.junit.Test;
     public class FahrenheitTest {
         private float delta = 0.001f;
@@ -25,6 +23,7 @@ public class FahrenheitTest {
 // Verify the prefix of the formatted string assertTrue(string.endsWith(ending));
 // Verify the middle of the formatted string int endIndex = string.indexOf(ending);
 // (Hint: what is the length of the middle of the string?)
+            int endIndex = string.length();
             assertTrue(string.substring(0, endIndex).equals(beginning)); }
         @Test
         public void testFahrenheitToFahrenheit() {
@@ -38,4 +37,3 @@ public class FahrenheitTest {
             temp = new Fahrenheit(212); convert = temp.toCelsius();
             assertEquals(100, convert.getValue(), delta); }
     }
-}
