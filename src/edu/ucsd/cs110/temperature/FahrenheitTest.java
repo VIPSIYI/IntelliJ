@@ -24,7 +24,14 @@ import static org.junit.Assert.*;
 // Verify the middle of the formatted string int endIndex = string.indexOf(ending);
 // (Hint: what is the length of the middle of the string?)
             int endIndex = string.length();
-            assertTrue(string.substring(0, endIndex).equals(beginning)); }
+            //System.out.println(endIndex);
+            //System.out.println(beginning);
+            //System.out.println(string);
+            assertTrue(string.substring(0, endIndex-1).equals(beginning));
+
+
+        }
+
         @Test
         public void testFahrenheitToFahrenheit() {
             Fahrenheit temp = new Fahrenheit(32);
