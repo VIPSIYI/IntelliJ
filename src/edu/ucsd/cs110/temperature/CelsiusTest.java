@@ -24,7 +24,7 @@ public class CelsiusTest {
 // Verify the middle of the formatted string int endIndex = string.indexOf(ending);
 // (Hint: what is the length of the middle of the string?)
         int endIndex = string.length();
-        assertTrue(string.substring(0, endIndex).equals(beginning)); }
+        assertTrue(string.substring(0, endIndex-2).equals(beginning)); }
     @Test
     public void testCelsiusToCelsius() {
         Celsius temp = new Celsius(0); Temperature convert = temp.toCelsius(); assertEquals(0, convert.getValue(), delta);

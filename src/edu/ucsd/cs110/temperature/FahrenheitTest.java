@@ -27,7 +27,7 @@ public class FahrenheitTest {
         //System.out.println(endIndex);
         //System.out.println(beginning);
         //System.out.println(string);
-        assertTrue(string.substring(0, endIndex).equals(beginning));
+        assertTrue(string.substring(0, endIndex-2).equals(beginning));
 
 
     }
